@@ -12,6 +12,7 @@ body{
     background-position: center center;
     background-attachment: scroll;
     background-size: cover;
+    height: 600px;
 }
 nav{
     height: 50px;
@@ -96,12 +97,15 @@ nav ul li a:hover, a.active{
 .inp-width{
     min-width: 300px;
 }
-.plus-minus-btn{
+.plus-minus-btn {
     color: #3352F2;
-    font-size: 30px;
-    padding: 2px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    outline-color: #8798f1;
+    padding: 8px;
     margin: 10px 5px 0px 0px;
-    word-spacing: 20px;
+    cursor: pointer;
 }
 .booking-form .inputs{
     display: grid;
@@ -117,8 +121,43 @@ nav ul li a:hover, a.active{
     color: #fff;
     font-weight: 500;
     background-color:  #E33741;
+    cursor: pointer;
 }
 .amount{
     display: flex;
     justify-content: space-between;
+}
+#confirmation-page-area {
+    display: none;
+    width: 34%;
+    margin: auto;
+    position: relative;
+    top: 200px;
+}
+.confirmation-container {
+    background-color: white;
+    width: 450px;
+    padding: 30px 18px;
+    border-radius: 6px;
+}
+.confirmation-btn {
+    padding: 10px 30px;
+    border: none;
+    outline-color: dimgray;
+    margin-top: 30px;
+    border-radius: 5px;
+    margin-right: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.buttons {
+    width: 62%;
+    margin: auto;
+}
+.confirm-btn {
+    background-color: #e33741;
+    color: white;
+}
+.cancel-btn {
+    background-color: #e3e3e3;
 }
